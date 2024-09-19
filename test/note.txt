@@ -1,0 +1,32 @@
+- line height, top, display block anchor <a></a>
+- struktur section :
+<section>
+<div class="container">
+    <div class="row">
+        <div class="content">
+        
+        </div>
+    </div>
+</div>
+</section>
+
+WE COMMITTED TO SAFETY AND BEST QUALITY
+
+PT Beverint Surya Sejati adalah sebuah perusahaan nasional yang bergerak di bidang Kontraktor Umum (General Contractor), Engineering & Supplier yang mencakup bidang layanan arsitektur, bidang layanan teknik sipil, bidang layanan elektrikal, dan bidang layanan mekanikal.
+
+Perusahaan ini telah berpengalaman dalam aktivitas proyek pembangunan sejak didirikan di tanggal sekian di jakarta. profesionalitas Untuk menjunjung kepuasan klien kami, integritas perusahaan, mitra profesional
+inovasi dengan megikuti teknologi yang terbaru didukung oleh sdm yang profesional dan berkembang mencapai efisiensi
+standar keamanan yang tinggi 
+peduli terhadap lingkungan
+
+inovasi
+teknologi yang mengikuti jaman
+standar keamanan
+integritas perusahaan
+sdm yang 
+mitra yang profesional
+lingkungan
+
+VISI
+
+MISI

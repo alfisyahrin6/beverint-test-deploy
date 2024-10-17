@@ -56,49 +56,43 @@ window.addEventListener('scroll', function () {
 //         nav.classList.remove('black')
 //     }
 // }
-const logo = document.querySelector('.partner-logo').cloneNode(true);
-document.querySelector('.logo-container').appendChild(logo);
+const partner = document.getElementsByClassName("partner-logo");
+if (partner.length !== 0) {
+    const logo = document.querySelector('.partner-logo').cloneNode(true);
+    document.querySelector('.logo-container').appendChild(logo);
+}
+const modal_img = document.getElementsByClassName("myImg");
+if (modal_img.length !== 0) {
+    let modal = document.getElementById("myModal");
 
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    let images = document.getElementsByClassName("myImg");
+    let modalImg = document.getElementById("img-modal");
+    let captionText = document.getElementById("caption");
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const scrollImages = document.querySelector('.project-gallery');
-    const scrollLength = scrollImages.scrollWidth - scrollImages.clientWidth;
-    const leftButton = document.querySelector('.left');
-    const rightButton = document.querySelector('.right');
-    function checkScroll() {
-        const currentScroll = scrollImages.scrollLeft;
-        if (currentScroll === 0) {
-            leftButton.setAttribute('disabled', 'true');
-            rightButton.removeAttribute('disabled')
-        }
-        else if (currentScroll === scrollLength) {
-            rightButton.setAttribute('disabled', 'true')
-            leftButton.removeAttribute('disabled')
-        }
-        else {
-            leftButton.removeAttribute('disabled')
-            rightButton.removeAttribute('disabled')
+    for (let i = 0; i < images.length; i++) {
+        let img = images[i];
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
         }
     }
 
+    // Get the <span> element that closes the modal
+    const span = document.getElementsByClassName("close")[0];
 
-    scrollImages.addEventListener('scroll', checkScroll);
-    window.addEventListener('resize', checkScroll);
-    checkScroll();
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+}
 
-    function leftScroll() {
-        scrollImages.scrollBy({
-            left: -200,
-            behavior: "smooth"
-        })
-    }
-    function rightScroll() {
-        scrollImages.scrollBy({
-            left: 200,
-            behavior: "smooth"
-        })
-    }
-    leftButton.addEventListener('click', leftScroll)
-    rightButton.addEventListener('click', rightScroll)
-});
+
+
+
+
+
+
+
+
